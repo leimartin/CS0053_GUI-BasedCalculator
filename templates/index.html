@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href=".\static\style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1 class=" glow">CASIO</h1>
+        <input type="text" id="display" name="display" readonly>
+        <div class="buttons">
+            <button onclick="powerBtn()" id="power-btn" class="power-btn on">On</button>
+            <button onclick="appendInput('7')" class="calc-btn">7</button>
+            <button onclick="appendInput('8')" class="calc-btn">8</button>
+            <button onclick="appendInput('9')" class="calc-btn">9</button>
+            <button onclick="appendInput('/')" class="calc-btn" id="divide-btn">/</button>
+                    
+            <button onclick="clearDisplay()" class="calc-btn">C</button>
+            <button onclick="appendInput('4')" class="calc-btn">4</button>
+            <button onclick="appendInput('5')" class="calc-btn">5</button>
+            <button onclick="appendInput('6')" class="calc-btn">6</button>
+            <button onclick="appendInput('*')" class="calc-btn" id="multiply-btn">*</button>
+
+            <button onclick="backspace()" class="calc-btn" id="delete-btn">DEL</button>
+            <button onclick="appendInput('1')" class="calc-btn">1</button>
+            <button onclick="appendInput('2')" class="calc-btn">2</button>
+            <button onclick="appendInput('3')" class="calc-btn">3</button>
+            <button onclick="appendInput('-')" class="calc-btn">-</button>
+                    
+            <button onclick="appendInput('0')" class="calc-btn">0</button>
+            <button onclick="appendInput('00')" class="calc-btn">00</button>
+            <button onclick="appendInput('.')" class="calc-btn">.</button>
+            <button onclick="calculate()" class="calc-btn" id="calculate-btn">=</button>
+            <button onclick="appendInput('+')" class="calc-btn">+</button>   
+        </div>
+    </div>
+       
+    <p> © 2023 VILM Inc. </p>
+   
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

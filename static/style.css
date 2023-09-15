@@ -1,0 +1,119 @@
+/*
+    CALCULATOR'S THEME
+    #000000 - black
+    #07689F - blue
+    #A2D5F2 - light blue
+    #DF2E38 - red
+    #952323 - maroon
+    #5D9C59 - green
+    #1A5D1A - dark green
+    #FAF1E4 - beige
+*/
+
+/* FONTS & EFFECTS */
+@font-face {
+    font-family: Calculator;
+    src: url('/static/fonts/calcu/Calculator.ttf') format('truetype');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Inter;
+    src: url('/static/fonts/inter/Inter-Medium.ttf') format('truetype');
+}
+
+.glow { 
+    color: white;
+    font-family: Inter, Arial;
+    font-size: 35px;
+    margin: 10px 10px;
+    text-align: left;
+    -webkit-animation: glow 0.0625s ease-in-out infinite alternate;
+    -moz-animation: glow 0.0625s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 3px #eeeeee, 0 0 6px #4F709C, 0 0 9px #4F709C, 0 0 12px #4F709C;
+    } to {
+        text-shadow: 0 0 3px #eeeeee, 0 0 6px #E5D283, 0 0 9px #E5D283, 0 0 12px #E5D283;
+    }
+} 
+
+/* BASE AND BACKGROUND */
+body {
+    background-color: #FAF1E4;
+    font-family: Inter, sans-serif;
+    text-align: center;
+}
+
+.calculator {
+    background-color: #000000;
+    border-radius: 10px 60px;
+    border: 7px outset lightgray;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0.24, 0.5);
+    height: 75%;
+    margin: 100px auto 70px auto;
+    width: 370px;
+    padding: 20px;
+}
+
+#display {
+    border-radius: 30px 15px;
+    border: 5px inset #F5EFE7;
+    font-size: 50px;
+    font-family: Calculator, Arial;
+    height: 90px;
+    margin: 10px auto 15px auto;
+    width: 95%;
+    padding: -10px 5px;
+    text-align: right;
+}
+
+/* BUTTONS */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+}
+
+button {
+    background-color: #07689F;
+    border-radius: 40px;
+    color: #FFFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: bold;
+    height: 50px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #A2D5F2;
+    color: #07689F;
+}
+
+.power-btn {
+    font-size: 20px;
+}
+
+.on {
+    background-color: #5D9C59;
+    color: #FFFF;
+}
+
+.power-btn.on:hover {
+    background-color: #FFFF00;
+    color: #1A5D1A;
+}
+
+.off {
+    background-color: #DF2E38;
+    color: #FFFF;
+}
+
+.power-btn.off:hover {
+    background-color: #FFFF00;
+    color: #952323;
+}
